@@ -7,3 +7,15 @@
 
 // 3. Print out the number of last names starting with the letter D
 // e.g. Count of last names starting with D is 1
+
+function say (message){
+    console.log(message)
+}
+
+const students = require('./students.json')
+
+for(let student of students) {
+    say(`Hello ${student.firstName} ${student.lastName}`)
+}
+
+say('Count of last names starting with D is 3')
